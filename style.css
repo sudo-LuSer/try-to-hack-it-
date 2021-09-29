@@ -1,0 +1,117 @@
+:root {
+
+	--editor-background-dark: #2a2b40;/*BG*/
+
+	--gray-75: #3b3b4f;/*INPUT*/
+	
+	--gray-90: #0a0a23;/*BTN*/
+
+	--gray-15: #d0d0d5;/*PLACEHOLDEr*/
+
+}
+
+body{
+
+	background: var(--editor-background-dark);
+
+	font-family:'arial' sans-serif;
+
+}
+
+button{
+
+	background: var(--gray-90);
+
+	border:none;
+
+	height: 55px;
+
+	width: 351px;
+
+	font-size: 120%;
+
+	color: var(--gray-15);
+
+	margin-left: 5px;
+
+	transition: all 1.5s ease;
+
+}
+
+button:hover{
+
+	box-shadow: 2px 4px 8px black;
+
+}
+
+input{
+
+	background: var(--gray-75);
+
+	border:none;
+
+	height: 50px;
+
+	width: 350px;
+
+	margin:5px;
+
+	font-size: 100%;
+
+	color: var(--gray-15);
+
+	box-shadow: 2px 4px 8px black;
+
+}
+
+input::placeholder{
+
+	color: var(--gray-15);
+
+	font-size: 100%;
+
+}
+
+form{
+
+	position: absolute;
+
+	left: 50%;
+
+	top: 50%;
+
+	transform: translate(-50%,-50%);
+
+}
+
+@media (max-width: 400px){
+
+	input{
+
+		width: 250px;
+
+	}
+
+	button{
+
+		width: 252.5px;
+
+	}
+
+}
+
+@media (max-width: 270px){
+
+	input{
+
+		width: 150px;
+
+	}
+
+	button{
+
+		width: 153px;
+
+	}
+
+}
